@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  background-color: rgb(14, 14, 14);
+  width: 20vw;
+  height: 20vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 1px 0px 22px 2px rgba(0, 0, 0, 0.5);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px 20px;
+  border-radius: 20px;
+}
+button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 2.2rem;
+  box-shadow: 1px 0px 22px 2px rgba(0, 0, 0, 0.2);
+}
+button:nth-child(1) {
+  background-color: rgb(255, 57, 57);
+  color: rgb(105, 0, 0);
+  transition: 0.5s;
+}
+button:nth-child(3) {
+  background-color: rgb(63, 200, 63);
+  color: rgb(0, 59, 0);
+
+  transition: 0.4s;
+}
+
+button:nth-child(1):hover {
+  background-color: rgb(255, 31, 31);
+  transition: 0.5s;
+}
+button:nth-child(3):hover {
+  background-color: rgb(36, 168, 36);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main {
+        background-color: rgb(14, 14, 14);
+        width: 60vw;
+        height: 20vh;
+        padding: 20px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        width: 30vw;
+    }
+}
